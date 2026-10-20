@@ -1,0 +1,30 @@
+body {
+  height: 100vh; /* Define a altura do corpot 100% */
+  width: 100%; /* Garantir o corpo ocupe toda a largura */
+}
+
+main {
+  height: 100%;
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quadrado {
+  display: inline-block;
+  background-color: teal;
+  --tamanho: 150px;
+  padding: var(--tamanho);
+  border-radius: 10%;
+}
+.wrapper {
+  display: flex; /* Trasnforma um container flexivel */
+  flex-wrap: wrap; /* O Flexbox tenta expremer todos
+  os itens em uma unica linha, mesmo que eles fiquem
+  deformados ou saiam da tela */
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+}
